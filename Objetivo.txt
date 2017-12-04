@@ -1,0 +1,8 @@
+Integrar nuevas funciones como ordenar ítems por nombre, filtros de búsqueda, etc. Con el objetivo de facilitar la navegación por la lista de módulos y unidades de aprendizaje.
+
+Para esto se implementará lo siguiente:
+
+•	Botón para volver desde la lista de unidades de aprendizaje a la lista de módulos.
+•	Agregar Controles para ordenar la lista de módulos.
+•	Mantener el estilo de las otras pantallas del sitio
+
