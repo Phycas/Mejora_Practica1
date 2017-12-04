@@ -2,7 +2,7 @@
   <catalog allSchemes="True" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" allTables="False" allAliases="False" allSynonyms="False" allSystemTables="False" allSystemViews="False" allViews="False" allProcedures="False" allProcedureParameters="False" full="False">
     <schema SCHEMA_NAME="information_schema" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" allTables="False" allAliases="False" allSynonyms="False" allSystemTables="False" allSystemViews="False" allViews="False" allProcedures="False" allProcedureParameters="False" full="True" />
     <schema SCHEMA_NAME="cft_twk" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" allTables="True" allAliases="False" allSynonyms="True" allSystemTables="False" allSystemViews="False" allViews="True" allProcedures="False" allProcedureParameters="False" full="True">
-      <table TABLE_NAME="actas" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="actas" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="acta_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="acta_fecha" ORDINAL_POSITION="2" DATA_TYPE="133" CCS_TYPE="CCDate" NATIVE_TYPE="System.DateTime" DATE_TIME_PRECISION="19" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="acta_inicio" ORDINAL_POSITION="3" DATA_TYPE="134" CCS_TYPE="CCTime" NATIVE_TYPE="System.TimeSpan" DATE_TIME_PRECISION="19" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
@@ -11,26 +11,26 @@
         <column COLUMN_NAME="acta_objetivos" ORDINAL_POSITION="6" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="acta_temas" ORDINAL_POSITION="7" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="actas_participantes" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="actas_participantes" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="acta_participantes_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="acta_id" ORDINAL_POSITION="2" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="usuario_id" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="aprobacion" ORDINAL_POSITION="4" DATA_TYPE="16" CCS_TYPE="CCInteger" NATIVE_TYPE="System.SByte" NUMERIC_PRECISION="3" IS_NULLABLE="True" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="observaciones" ORDINAL_POSITION="5" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="areas" TABLE_TYPE="Table" DESCRIPTION="Areas donde se trabaja (ejm: backend / frontend / clientes" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="areas" DESCRIPTION="Areas donde se trabaja (ejm: backend / frontend / clientes" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="area_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="100" IS_NULLABLE="False" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="url" ORDINAL_POSITION="3" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="255" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="url_dev" ORDINAL_POSITION="4" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="255" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="bibliografias" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="bibliografias" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="bibliografia_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="500" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="autor" ORDINAL_POSITION="3" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="300" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="unidad_id" ORDINAL_POSITION="4" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="calendarizacion" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="calendarizacion" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="calendarizacion_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="unidad_id" ORDINAL_POSITION="2" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="ano" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
@@ -48,34 +48,34 @@
         <column COLUMN_NAME="evidencia" ORDINAL_POSITION="15" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="usuario_id" ORDINAL_POSITION="16" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="carreras" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="carreras" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="carrera_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="300" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="descripcion" ORDINAL_POSITION="3" DATA_TYPE="130" CCS_TYPE="CCMemo" NATIVE_TYPE="System.String" MAX_LENGTH="4294967295" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="sede_id" ORDINAL_POSITION="4" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="competencias_tipo" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="competencias_tipo" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="competencia_tipo_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="300" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="comunas" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="comunas" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="comuna_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="20" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="provincia_id" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="region_id" ORDINAL_POSITION="4" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="configuraciones" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="configuraciones" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="configuracion_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="title" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="200" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="contenidos" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="contenidos" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="contenido_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="contenido" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="actividades" ORDINAL_POSITION="3" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="orden" ORDINAL_POSITION="4" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="unidad_id" ORDINAL_POSITION="5" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="estudiantes" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="estudiantes" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="estudiante_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombres" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="200" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="apellidos" ORDINAL_POSITION="3" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="200" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
@@ -88,11 +88,11 @@
         <column COLUMN_NAME="cohorte" ORDINAL_POSITION="10" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="carrera_id_FK" ORDINAL_POSITION="11" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="icons" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="icons" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="icon" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="200" IS_NULLABLE="False" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="menu" TABLE_TYPE="Table" DESCRIPTION="Menu" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="menu" DESCRIPTION="Menu" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="menu_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="caption" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="60" IS_NULLABLE="False" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="link" ORDINAL_POSITION="3" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="255" IS_NULLABLE="False" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
@@ -105,16 +105,16 @@
         <column COLUMN_NAME="separador" ORDINAL_POSITION="10" DATA_TYPE="16" CCS_TYPE="CCInteger" NATIVE_TYPE="System.SByte" NUMERIC_PRECISION="3" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="area_id" ORDINAL_POSITION="11" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="area donde se muestra (backend/frontend/clientes/app)" full="True" />
       </table>
-      <table TABLE_NAME="menu_pos" TABLE_TYPE="Table" DESCRIPTION="Posición dentro de la pagina para mostrar el menu" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="menu_pos" DESCRIPTION="Posición dentro de la pagina para mostrar el menu" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="menu_pos_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="100" IS_NULLABLE="False" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="menu_pos_menu" TABLE_TYPE="Table" DESCRIPTION="Tabla que guarda que posiciones ocupa cada item de menu" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="menu_pos_menu" DESCRIPTION="Tabla que guarda que posiciones ocupa cada item de menu" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="menu_pos_menu_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="menu_id" ORDINAL_POSITION="2" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="menu_pos_id" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="modulos" TABLE_TYPE="Table" DESCRIPTION="" allColumns="True" allPrimaryKeys="True" allForeignKeys="False" full="True">
+      <table TABLE_NAME="modulos" DESCRIPTION="" allColumns="True" allPrimaryKeys="True" allForeignKeys="False" full="True">
         <column COLUMN_NAME="modulo_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="300" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="codigo" ORDINAL_POSITION="3" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="50" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
@@ -124,33 +124,33 @@
         <column COLUMN_NAME="horas" ORDINAL_POSITION="7" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <primaryKey PK_COLUMN_NAME="modulo_id" KEY_NAME="PRIMARY" ENABLED="True" full="True" />
       </table>
-      <table TABLE_NAME="niveles" TABLE_TYPE="Table" DESCRIPTION="Niveles de Acceso de los Usuarios" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="niveles" DESCRIPTION="Niveles de Acceso de los Usuarios" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="nivel_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nom_nivel" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="50" IS_NULLABLE="False" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="visible" ORDINAL_POSITION="3" DATA_TYPE="16" CCS_TYPE="CCInteger" NATIVE_TYPE="System.SByte" NUMERIC_PRECISION="3" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="prerrequisitos" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="prerrequisitos" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="prerrequisito_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="unidad_id" ORDINAL_POSITION="2" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="unidad_prerrequisito" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="provincias" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="provincias" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="provincia_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="17" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="region_id" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="revisiones" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="revisiones" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="revision_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="fecha" ORDINAL_POSITION="2" DATA_TYPE="133" CCS_TYPE="CCDate" NATIVE_TYPE="System.DateTime" DATE_TIME_PRECISION="19" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="responsable" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="observaciones" ORDINAL_POSITION="4" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="carrera_id" ORDINAL_POSITION="5" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="sedes" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="sedes" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="sede_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="nombre" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="300" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="unidades" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="unidades" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="unidad_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="modulo_id" ORDINAL_POSITION="2" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="competencia_tipo_id" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
@@ -177,7 +177,7 @@
         <column COLUMN_NAME="ap_ss_ce_sh" ORDINAL_POSITION="24" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="ap_ss_ce_ss" ORDINAL_POSITION="25" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="usuarios" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="usuarios" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="usuario_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="usuario_apellido_paterno" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="100" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="usuario_apellido_materno" ORDINAL_POSITION="3" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="100" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
@@ -191,16 +191,16 @@
         <column COLUMN_NAME="docente" ORDINAL_POSITION="11" DATA_TYPE="16" CCS_TYPE="CCInteger" NATIVE_TYPE="System.SByte" NUMERIC_PRECISION="3" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="diseno" ORDINAL_POSITION="12" DATA_TYPE="16" CCS_TYPE="CCInteger" NATIVE_TYPE="System.SByte" NUMERIC_PRECISION="3" IS_NULLABLE="True" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="usuarios_has_unidades" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="usuarios_has_unidades" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="NMID" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="usuario_id" ORDINAL_POSITION="2" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="unidad_id" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="valores" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="valores" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="valor_id" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="descripcion" ORDINAL_POSITION="2" DATA_TYPE="130" CCS_TYPE="CCText" NATIVE_TYPE="System.String" MAX_LENGTH="65535" IS_NULLABLE="True" DEFAULT_VALUE="" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
       </table>
-      <table TABLE_NAME="valores_has_modulos" TABLE_TYPE="Table" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
+      <table TABLE_NAME="valores_has_modulos" DESCRIPTION="" allColumns="False" allPrimaryKeys="False" allForeignKeys="False" full="True">
         <column COLUMN_NAME="NMID" ORDINAL_POSITION="1" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" COLUMN_HAS_DEFAULT="False" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="valor_id" ORDINAL_POSITION="2" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
         <column COLUMN_NAME="modulo_id" ORDINAL_POSITION="3" DATA_TYPE="3" CCS_TYPE="CCInteger" NATIVE_TYPE="System.Int32" NUMERIC_PRECISION="10" IS_NULLABLE="False" DEFAULT_VALUE="0" COLUMN_HAS_DEFAULT="True" DESCRIPTION="" full="True" />
