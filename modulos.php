@@ -49,7 +49,7 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
     public $Sorter_horas;
 //End Variables
 
-//Class_Initialize Event @3-F297858D
+//Class_Initialize Event @3-970A2A1C
     function clsGridmodulos1($RelativePath, & $Parent)
     {
         global $FileName;
@@ -86,6 +86,8 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
         $this->descripcion = new clsControl(ccsLabel, "descripcion", "descripcion", ccsText, "", CCGetRequestParam("descripcion", ccsGet, NULL), $this);
         $this->componente_tecnico = new clsControl(ccsLabel, "componente_tecnico", "componente_tecnico", ccsText, "", CCGetRequestParam("componente_tecnico", ccsGet, NULL), $this);
         $this->horas = new clsControl(ccsLabel, "horas", "horas", ccsInteger, "", CCGetRequestParam("horas", ccsGet, NULL), $this);
+        $this->modulo_id1 = new clsControl(ccsLink, "modulo_id1", "modulo_id1", ccsInteger, "", CCGetRequestParam("modulo_id1", ccsGet, NULL), $this);
+        $this->modulo_id1->Page = "";
         $this->modulos1_Insert = new clsControl(ccsLink, "modulos1_Insert", "modulos1_Insert", ccsText, "", CCGetRequestParam("modulos1_Insert", ccsGet, NULL), $this);
         $this->modulos1_Insert->Parameters = CCGetQueryString("QueryString", array("modulo_id", "ccsForm"));
         $this->modulos1_Insert->Page = "modulos.php";
@@ -112,7 +114,7 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
     }
 //End Initialize Method
 
-//Show Method @3-5E6B42D5
+//Show Method @3-773691E3
     function Show()
     {
         $Tpl = CCGetTemplate($this);
@@ -147,6 +149,7 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
             $this->ControlsVisible["descripcion"] = $this->descripcion->Visible;
             $this->ControlsVisible["componente_tecnico"] = $this->componente_tecnico->Visible;
             $this->ControlsVisible["horas"] = $this->horas->Visible;
+            $this->ControlsVisible["modulo_id1"] = $this->modulo_id1->Visible;
             while ($this->ForceIteration || (($this->RowNumber < $this->PageSize) &&  ($this->HasRecord = $this->DataSource->has_next_record()))) {
                 $this->RowNumber++;
                 if ($this->HasRecord) {
@@ -163,6 +166,9 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
                 $this->descripcion->SetValue($this->DataSource->descripcion->GetValue());
                 $this->componente_tecnico->SetValue($this->DataSource->componente_tecnico->GetValue());
                 $this->horas->SetValue($this->DataSource->horas->GetValue());
+                $this->modulo_id1->SetValue($this->DataSource->modulo_id1->GetValue());
+                $this->modulo_id1->Parameters = CCGetQueryString("QueryString", array("ccsForm"));
+                $this->modulo_id1->Parameters = CCAddParam($this->modulo_id1->Parameters, "modulo_id", $this->DataSource->f("modulo_id"));
                 $this->Attributes->SetValue("rowNumber", $this->RowNumber);
                 $this->CCSEventResult = CCGetEvent($this->CCSEvents, "BeforeShowRow", $this);
                 $this->Attributes->Show();
@@ -173,6 +179,7 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
                 $this->descripcion->Show();
                 $this->componente_tecnico->Show();
                 $this->horas->Show();
+                $this->modulo_id1->Show();
                 $Tpl->block_path = $ParentPath . "/" . $GridBlock;
                 $Tpl->parse("Row", true);
             }
@@ -213,7 +220,7 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
     }
 //End Show Method
 
-//GetErrors Method @3-BCA4C2BD
+//GetErrors Method @3-C3C4997E
     function GetErrors()
     {
         $errors = "";
@@ -224,6 +231,7 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
         $errors = ComposeStrings($errors, $this->descripcion->Errors->ToString());
         $errors = ComposeStrings($errors, $this->componente_tecnico->Errors->ToString());
         $errors = ComposeStrings($errors, $this->horas->Errors->ToString());
+        $errors = ComposeStrings($errors, $this->modulo_id1->Errors->ToString());
         $errors = ComposeStrings($errors, $this->Errors->ToString());
         $errors = ComposeStrings($errors, $this->DataSource->Errors->ToString());
         return $errors;
@@ -234,7 +242,7 @@ class clsGridmodulos1 { //modulos1 class @3-9FB2C7BB
 
 class clsmodulos1DataSource extends clsDBcosas {  //modulos1DataSource Class @3-90A403D8
 
-//DataSource Variables @3-F6900E01
+//DataSource Variables @3-5C8945E6
     public $Parent = "";
     public $CCSEvents = "";
     public $CCSEventResult;
@@ -253,9 +261,10 @@ class clsmodulos1DataSource extends clsDBcosas {  //modulos1DataSource Class @3-
     public $descripcion;
     public $componente_tecnico;
     public $horas;
+    public $modulo_id1;
 //End DataSource Variables
 
-//DataSourceClass_Initialize Event @3-16EEE18C
+//DataSourceClass_Initialize Event @3-4D61A1F2
     function clsmodulos1DataSource(& $Parent)
     {
         $this->Parent = & $Parent;
@@ -274,6 +283,8 @@ class clsmodulos1DataSource extends clsDBcosas {  //modulos1DataSource Class @3-
         $this->componente_tecnico = new clsField("componente_tecnico", ccsText, "");
         
         $this->horas = new clsField("horas", ccsInteger, "");
+        
+        $this->modulo_id1 = new clsField("modulo_id1", ccsInteger, "");
         
 
     }
@@ -320,7 +331,7 @@ class clsmodulos1DataSource extends clsDBcosas {  //modulos1DataSource Class @3-
     }
 //End Open Method
 
-//SetValues Method @3-D1A92A6D
+//SetValues Method @3-40F158C4
     function SetValues()
     {
         $this->modulo_id->SetDBValue(trim($this->f("modulo_id")));
@@ -330,6 +341,7 @@ class clsmodulos1DataSource extends clsDBcosas {  //modulos1DataSource Class @3-
         $this->descripcion->SetDBValue($this->f("descripcion"));
         $this->componente_tecnico->SetDBValue($this->f("componente_tecnico"));
         $this->horas->SetDBValue(trim($this->f("horas")));
+        $this->modulo_id1->SetDBValue(trim($this->f("modulo_id")));
     }
 //End SetValues Method
 

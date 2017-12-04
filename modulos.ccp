@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="None" wizardThemeVersion="3.0" useDesign="False" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="None" wizardThemeVersion="3.0" useDesign="False" needGeneration="0" showSyncDlg="false">
 	<Components>
 		<Panel id="2" visible="True" generateDiv="True" name="Panel1" PathID="Panel1" features="(assigned)">
 			<Components>
@@ -104,7 +104,16 @@
 							<Attributes/>
 							<Features/>
 						</Navigator>
-					</Components>
+						<Link id="91" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" html="False" hrefType="Page" preserveParameters="GET" name="modulo_id1" fieldSource="modulo_id" wizardCaption="Modulo Id" wizardIsPassword="False" wizardUseTemplateBlock="False" linkProperties="''" wizardAlign="right" wizardAddNbsp="True" wizardThemeItem="GridA" PathID="Panel1modulos1modulo_id1" urlType="Relative">
+							<Components/>
+							<Events/>
+							<LinkParameters>
+								<LinkParameter id="92" sourceType="DataField" format="yyyy-mm-dd" name="modulo_id" source="modulo_id"/>
+							</LinkParameters>
+							<Attributes/>
+							<Features/>
+						</Link>
+</Components>
 					<Events/>
 					<TableParameters/>
 					<JoinTables>
@@ -347,11 +356,11 @@
 			</Features>
 		</Panel>
 		<IncludePage id="90" name="my_include" PathID="my_include" page="my_include.ccp">
-<Components/>
-<Events/>
-<Features/>
-</IncludePage>
-</Components>
+			<Components/>
+			<Events/>
+			<Features/>
+		</IncludePage>
+	</Components>
 	<CodeFiles>
 		<CodeFile id="Events" language="PHPTemplates" name="modulos_events.php" forShow="False" comment="//" codePage="utf-8"/>
 		<CodeFile id="Code" language="PHPTemplates" name="modulos.php" forShow="True" url="modulos.php" comment="//" codePage="utf-8"/>
